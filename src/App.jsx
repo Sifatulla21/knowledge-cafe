@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Blog from './components/Blog/Blog'
+import Blogs from './components/Blog/Blogs'
 import './App.css'
 
 function App() {
   return (
     <div className="App">
-        <Blog></Blog>
+        <Blogs></Blogs>
     </div>
   )
 }

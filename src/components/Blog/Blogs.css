@@ -1,0 +1,23 @@
+.blogArea{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.blogName{
+    color: black;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.spentTime{
+    width: 411px;
+    height: 80px;
+    padding: 10px;
+    background: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+    color: #6047EC;
+}
+.bookmarksBlogs{
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
