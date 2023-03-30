@@ -1,5 +1,10 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookBookmark } from '@fortawesome/free-solid-svg-icons'
 import './Card.css'
+const clicked = () =>{
+    console.log("Clicked");
+}
 const Card = (props) => {
     console.log(props);
     const {cover,time,title,userName,userPicture} = props.blog;
@@ -17,7 +22,7 @@ const Card = (props) => {
                     </div>
                 </div>
                 <div className="timeRead">
-                    <p>{time} min read</p>
+                    <p>{time} min read<a onClick={clicked} href="#"><FontAwesomeIcon icon={faBookBookmark}/></a></p>
                 </div>
             </div>
             <h1>{title}</h1>
