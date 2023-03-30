@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import BookmarkAdded from '../Added Bookmark/BookmarkAdded';
 import Card from '../Card/Card'
 import './Blogs.css'
 const Blogs = () => {
@@ -37,6 +38,13 @@ const Blogs = () => {
                 </div>
                 <div className="bookmarksBlogs">
                     <h1>Bookmarked Blogs : {bookmarks.length}</h1>
+                    {
+                        bookmarks.map(addedBookmark => <BookmarkAdded
+                        key={addedBookmark.id}
+                            addedBookmark={addedBookmark}
+                        ></BookmarkAdded>
+                        )
+                    }
                 </div>
             </div>
         </div>
