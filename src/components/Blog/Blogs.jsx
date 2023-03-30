@@ -5,21 +5,24 @@ import './Blogs.css'
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
     const [bookmarks, setBookmarks] = useState([]);
+    const [times, setTime] = useState([]);
     useEffect(() => {
         fetch('fakeData.json')
         .then(res => res.json())
         .then(data => setBlogs(data))
 
     }, []);
+    const handleTime = (blog) =>{
+        const newTimes = [...times,blog];
+        setTime(newTimes);
+    }
     const handleBookmark = (blog) =>{
        const newBookmarks = [...bookmarks,blog];
        setBookmarks(newBookmarks);
-       console.log(bookmarks);
     }
-
     let totalTime = 0;
-    for(const bookmark of bookmarks){
-        totalTime = totalTime + bookmark.time;
+    for(const time of times){
+        totalTime = totalTime + time.time;
     }
     return (
         <div className="blogArea">
@@ -28,6 +31,7 @@ const Blogs = () => {
                 blogs.map(blog => <Card
                 key={blog.id}
                 blog={blog}
+                handleTime={handleTime}
                 handleBookmark={handleBookmark}
                 ></Card>)
                 }

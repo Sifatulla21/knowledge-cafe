@@ -5,6 +5,8 @@ import './Card.css'
 const Card = (props) => {
     const {cover,time,title,userName,userPicture} = props.blog;
     const handleBookmark = props.handleBookmark;
+    const handleTime = props.handleTime;
+
     return (
         <div className="cardBody">
             <img className="cardCover" src={cover} alt="" />
@@ -23,7 +25,7 @@ const Card = (props) => {
                 </div>
             </div>
             <h1>{title}</h1>
-            <a href="">mark as read</a>
+            <a onClick={()=> handleTime(props.blog)} href="#">mark as read</a>
         </div>
     );
 };
