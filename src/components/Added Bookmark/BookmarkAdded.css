@@ -6,3 +6,11 @@
     border-radius: 8px;
     padding: 20px;
 }
+@media only screen and (max-width: 688px){
+
+    .addedBookmarks{
+        width: 50vw;
+
+    }
+
+}

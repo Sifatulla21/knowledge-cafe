@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BookmarkAdded from '../Added Bookmark/BookmarkAdded';
 import Card from '../Card/Card'
+import Blog from './Blog';
 import './Blogs.css'
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
@@ -50,6 +51,9 @@ const Blogs = () => {
                         )
                     }
                 </div>
+            </div>
+            <div>
+                <Blog></Blog>
             </div>
         </div>
     );
