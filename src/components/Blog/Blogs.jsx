@@ -53,10 +53,10 @@ const Blogs = () => {
             </div>
             <div className="blogName">
                 <div className="spentTime">
-                    <h3>Spent time on read : {totalTime} min</h3>
+                    <h2>Spent time on read : {totalTime} min</h2>
                 </div>
                 <div className="bookmarksBlogs">
-                    <h1>Bookmarked Blogs : {bookmarks.length}</h1>
+                    <h2>Bookmarked Blogs : {bookmarks.length}</h2>
                     {
                         bookmarks.map(addedBookmark => <BookmarkAdded
                             key={addedBookmark.id}

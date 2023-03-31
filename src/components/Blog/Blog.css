@@ -1,6 +1,10 @@
 .qna{
-    border: 2px solid black;
-    color: black;
+    background: rgba(118, 98, 233, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+    color: #6047EC;
+    font-size: x-large;
+    font-weight: 400;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
