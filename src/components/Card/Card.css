@@ -6,7 +6,7 @@
     margin-top: 20px;
     color: black;
 }
-.cardBody h1, a{
+.cardBody h2, a{
     padding-left: 20px;
 }
 .cardCover{
@@ -34,6 +34,7 @@
 @media only screen and (max-width: 688px){
 
     .cardBody{
+        font-size: medium;
         width: 40vh;
         height: 90vh;
         border: 2px solid black;

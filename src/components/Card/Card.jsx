@@ -21,10 +21,11 @@ const Card = (props) => {
                     </div>
                 </div>
                 <div className="timeRead">
-                    <p>{time} min read<a onClick={()=>handleBookmark(props.blog)} href="#"><FontAwesomeIcon icon={faBookBookmark}/></a></p>
+                    <p>{time} min read<a onClick={()=>
+                        handleBookmark(props.blog)} href="#"><FontAwesomeIcon icon={faBookBookmark}/></a></p>
                 </div>
             </div>
-            <h1>{title}</h1>
+            <h2>{title}</h2>
             <a onClick={()=> handleTime(props.blog)} href="#">mark as read</a>
         </div>
     );
