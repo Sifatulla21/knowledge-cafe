@@ -9,3 +9,11 @@
     margin-top: 20px;
     border-radius: 8px;
 }
+@media only screen and (max-width: 688px){
+
+.qna{
+    font-size:medium;
+    font-weight:200;
+}
+
+}
